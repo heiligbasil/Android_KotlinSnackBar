@@ -5,11 +5,11 @@ class Snack(val id: Int, val name: String, private var quantity: Int, var cost: 
     }
 
     fun buySnack(quantity: Int): Double {
-        this.quantity=this.quantity.minus(quantity)
+        this.quantity = this.quantity.minus(quantity)
         return quantity.times(cost)
     }
 
-    fun getQuantity():Int {
+    fun getQuantity(): Int {
         return this.quantity
     }
 
