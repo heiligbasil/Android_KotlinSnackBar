@@ -1,0 +1,1 @@
+class Vending (val id:Int,var name:String)
