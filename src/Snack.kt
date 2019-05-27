@@ -1,4 +1,4 @@
-class Snack(val id: Int, val name: String, private var quantity: Int, var cost: Double, val vendingId: Vending) {
+class Snack(val id: Int, val name: String, private var quantity: Int, var cost: Double, val vendingId: Int) {
 
     fun addQuantity(quantity: Int) {
         this.quantity += quantity
@@ -9,6 +9,6 @@ class Snack(val id: Int, val name: String, private var quantity: Int, var cost: 
     }
 
     fun getTotalCost(quantity: Int): Double {
-
+        return 0.0
     }
 }
